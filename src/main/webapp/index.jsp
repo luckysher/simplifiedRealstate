@@ -17,7 +17,21 @@
 			</div>
 		</header>
 		<div>
-			
+			<div class="content">
+				<nav>
+					<navbar>
+						<ul>
+							<li><a href="property">View property</a></li>
+							<li><a href="appointment">Book appointment</a></li>
+							<li><a href="test">Search Property </a></li>
+							<li><a href="login">Login</a></li>
+							<li><a href="Logout">Logout</a></li>
+							<li><a href="addproperty">Add property</a></li>
+						</ul>
+						
+					</navbar>
+				</nav>
+			</div>
 		</div>		
 		<footer>
 			<div class="footer footer-style block-size">
