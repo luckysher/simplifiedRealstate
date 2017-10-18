@@ -1,7 +1,7 @@
 #######################################################
 #      	   || Simplified Realstate  ||                #
 #                                                     #
-#    Java + maven + spring 3.0.1 + hibernate 3.0      #
+#    Java + maven + spring 3.0.5 + hibernate 3.0      #
 #                                                     #  
 #######################################################
 
@@ -18,7 +18,7 @@ Simplified Realstate :>>
  
  Technologies Used: 
  ------------------
-                    This have been developed using Java, maven, spring 3.0, hibernate 3.0, csc, bootstrap and javascript.
+                    This have been developed using Java, maven, spring 3.0.5, hibernate 3.0, csc, bootstrap and javascript.
  
  
  
@@ -29,7 +29,7 @@ Simplified Realstate :>>
  
  Project setup instructions:
  --------------------------
-                          Before setting up this project you will required spring 3.0 and hibernate 3.0 libraries.
+                          Before setting up this project you will required spring 3.0.5 and hibernate 3.0 libraries.
  
  
  
