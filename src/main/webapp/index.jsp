@@ -10,6 +10,19 @@
 			<script src="<c:url value="/resources/js/realstate.min.js" />"></script>
 			<link rel="icon" href="images/favicon.png" type="image/png">	
 	</head>
-	<body>
+	<body class="simp-style">
+		<header>
+			<div class="heading top-heading block-size">
+				<h2>SimpRealstate</h2>
+			</div>
+		</header>
+		<div>
+			
+		</div>		
+		<footer>
+			<div class="footer footer-style block-size">
+				<h5>simplify realstate</h5>
+			</div>
+		</footer>
 	</body>
 	</html>				   
