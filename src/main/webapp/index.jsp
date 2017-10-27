@@ -8,35 +8,18 @@
 			<!-- Required -->
 			<link href="<c:url value="/resources/css/realstate-style.css" />" rel="stylesheet" type="text/css" media="screen">
 			<script src="<c:url value="/resources/js/realstate.min.js" />"></script>
-			<link rel="icon" href="images/favicon.png" type="image/png">	
+			<link rel="icon" href="images/icon/favicon.png" type="image/png">	
 	</head>
 	<body class="simp-style">
-		<header>
-			<div class="heading top-heading block-size">
-				<h2>SimpRealstate</h2>
-			</div>
-		</header>
+		<% String block_base="WEB-INF"; %>
+		<% String ext=".jsp"; %>
+		<jsp:include page='<%=block_base + "/block/header" + ext %>'></jsp:include>
 		<div>
 			<div class="content">
-				<nav>
-					<navbar>
-						<ul>
-							<li><a href="property">View property</a></li>
-							<li><a href="appointment">Book appointment</a></li>
-							<li><a href="test">Search Property </a></li>
-							<li><a href="login">Login</a></li>
-							<li><a href="Logout">Logout</a></li>
-							<li><a href="addproperty">Add property</a></li>
-						</ul>
-						
-					</navbar>
-				</nav>
+				<h3>Content block</h3>
 			</div>
 		</div>		
-		<footer>
-			<div class="footer footer-style block-size">
-				<h5>simplify realstate</h5>
-			</div>
-		</footer>
+	
+	<jsp:include page='<%=block_base + "/block/footer" + ext %>'></jsp:include>
 	</body>
 	</html>				   
