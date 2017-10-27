@@ -18,5 +18,15 @@ public class AppointmentController{
 			view.addObject("command", new Appointment());
 		return view;
 	}
-	
+	@RequestMapping(value="appointment/save", method=RequestMethod.POST)
+	public ModelAndView appointmentSave(@ModelAttribute("")Appointment appointment, ModelMap model) {
+			model.addAttribute("name", appointment.getName());
+			model.addAttribute("address", appointment.getAddress());
+			
+			ModelAndView view = new ModelAndView();
+			view.setViewName("appointment_success");
+			view.addAllObjects(model);
+			
+		return view;
+	}
 }
