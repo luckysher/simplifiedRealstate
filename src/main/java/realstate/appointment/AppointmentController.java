@@ -42,7 +42,15 @@ public class AppointmentController{
 	@RequestMapping(value="appointment/save", method=RequestMethod.POST)
 	public ModelAndView appointmentSave(@ModelAttribute("appointment")@Valid Appointment appointment, BindingResult bindingResult, ModelMap model) {
 		
-	
+		
+	validator.validate(appointment, bindingResult);
+	if (bindingResult.hasErrors()) {
+		logger.info("[appointment save] >>>>>>> Returning appSave.jsp page <<<<<<");
+		ModelAndView view = new ModelAndView();
+		view.setViewName("appointmentview");
+		view.addObject("command", appointment);
+		return view;
+	}
 			model.addAttribute("name", appointment.getName());
 			model.addAttribute("address", appointment.getAddress());
 			ModelAndView view = new ModelAndView();
