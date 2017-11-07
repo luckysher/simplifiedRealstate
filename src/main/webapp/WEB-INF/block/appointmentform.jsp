@@ -2,7 +2,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<form:form method="post" action="save">
+<form:form method="post" commandName="appointment" action="save">
 	<table>
 		<tr>
 			<td>
@@ -12,7 +12,8 @@
 			</td>
 			<td>
 				<form:input path="name" />
-			</td>
+			</td>			
+			<td><form:errors path="name" cssClass="error" /></td>
 		</tr>
 		<tr>
 			<td>
