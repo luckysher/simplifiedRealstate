@@ -27,7 +27,12 @@ import form.validator.AppointmentFormValidator;
 public class AppointmentController{
 	protected final Log logger = LogFactory.getLog(getClass());
 	
-
+	@Autowired
+	AppointmentManager manager;
+	
+	@Autowired
+	AppointmentFormValidator validator;
+	
 	@InitBinder
 	public void initBinder(WebDataBinder webDataBinder){
 	        webDataBinder.setValidator(validator);
