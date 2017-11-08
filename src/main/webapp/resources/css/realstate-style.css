@@ -54,6 +54,13 @@ ul > li > a:hover {
 				}
 		.error {
 					color: #ff0000;
-					font-style: italic;
 					font-weight: bold;
+					margin-left: 253px;
+				   	font-style: oblique;
+					line-height: 3;
 				}
+				}
+			nav{
+					height: 58px;
+				}
+
