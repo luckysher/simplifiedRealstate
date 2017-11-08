@@ -95,3 +95,12 @@ ul > li > a:hover {
 					font-family: cursive;
 					background: #1a6919;
 				}
+		table {
+		    		background: antiquewhite;
+				    opacity: 0.9;
+				    height: 340px;
+				    width: 809px;										
+				}
+		table > td {
+					flow: right;
+					}
