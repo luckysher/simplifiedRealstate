@@ -70,4 +70,10 @@ ul > li > a:hover {
 .appointment-form{
 					width: 100vw;
 				}
+	.form-label{
+			    	font-size: 16px;
+			    	font-family: cursive;
+			    	flow:right;
+			    	margin-right:10 px;
+				}
 	
