@@ -63,4 +63,11 @@ ul > li > a:hover {
 			nav{
 					height: 58px;
 				}
-
+.appointment-heading{
+					width: 100vw;
+				    text-align: center;
+				}	
+.appointment-form{
+					width: 100vw;
+				}
+	
