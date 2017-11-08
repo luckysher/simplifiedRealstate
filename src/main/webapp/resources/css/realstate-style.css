@@ -83,4 +83,15 @@ ul > li > a:hover {
 				    font-size: 16px;
 				    font-family: cursive;
 				}
-
+.sub-but-container{
+					height: 51px;
+				}
+.appointment-button{
+					border: 1px solid orange;
+					border-radius: 5px;
+					height: 32px;
+					font-size: 16px;
+					margin-left: 75px;
+					font-family: cursive;
+					background: #1a6919;
+				}
