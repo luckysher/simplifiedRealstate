@@ -36,7 +36,7 @@
 		 	    	 font-size: 14px;
 		    		 font-family: cursive;		
 		     		 float: left;
-		    		 margin: 5px 12px 5px 0px;
+		    		 margin: 4px 17px 3px 20px;
 				}
 		ul > li:hover {
 			    	height: 48px;
@@ -47,22 +47,22 @@
 			    	border: 1px solid chocolate;
 				}
 	ul > li > a {
+					color: #0e880e;
 					text-decoration: none;	
 				}
 ul > li > a:hover {
-		    		color: aqua;
+		    		 color: #ff0000;
 				}
-		.error {
+		  .error {
 					color: #ff0000;
 					font-weight: bold;
-					margin-left: 253px;
+					margin-left: 312px;
 				   	font-style: oblique;
 					line-height: 3;
-				}
-				}
-			nav{
-					height: 58px;
-				}
+			 	 }
+		      nav{
+				 	height: 58px;
+	   			 }
 .appointment-heading{
 					width: 100vw;
 				    text-align: center;
@@ -70,22 +70,23 @@ ul > li > a:hover {
 .appointment-form{
 					width: 100vw;
 				}
-	.form-label{
+	.form-label {
 			    	font-size: 16px;
-			    	font-family: cursive;
-			    	flow:right;
-			    	margin-right:10 px;
-				}
-	td>input{
-					border: 1px solid orange;
-				    border-radius: 4px;
-				    padding: 4px 8px 10px 64px;
-				    font-size: 16px;
 				    font-family: cursive;
-				}
+				    float: right;
+				    margin-right: 57px;
+				 }
+		td>input {
+					border: 1px solid orange;
+					padding: 10px 10px 10px 10px;
+					font-size: 16px;
+					font-family: cursive;
+					width: 302px;
+					border-radius: 11px;
+				 } 
 .sub-but-container{
 					height: 51px;
-				}
+				  }
 .appointment-button{
 					border: 1px solid orange;
 					border-radius: 5px;
@@ -94,13 +95,11 @@ ul > li > a:hover {
 					margin-left: 75px;
 					font-family: cursive;
 					background: #1a6919;
-				}
-		table {
+				  }
+		    table {
 		    		background: antiquewhite;
 				    opacity: 0.9;
 				    height: 340px;
-				    width: 809px;										
-				}
-		table > td {
-					flow: right;
-					}
+				    width: 809px;
+				    padding: 29px 2px 7px 4px;										
+			 	  }
