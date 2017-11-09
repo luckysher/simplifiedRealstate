@@ -103,3 +103,9 @@ ul > li > a:hover {
 				    width: 809px;
 				    padding: 29px 2px 7px 4px;										
 			 	  }
+	   table > td {
+					text-align: center;
+		    	  }
+	   table > tr {
+	                line-height: 5;
+	   			  }
