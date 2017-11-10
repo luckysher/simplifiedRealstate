@@ -24,4 +24,16 @@ public class AppointmentFormValidator implements Validator{
 		return Appointment.class.equals(pClass);
 	}
 
+	@Override
+	public void validate(Object target, Errors errors) {
+		Appointment appointment = (Appointment) target;
+		String name = appointment.getName();
+		if(name.length() >= 5){	
+			logger.debug("[AppointmentFormValidator] >> ");
+			errors.rejectValue("name", "error.length");
+		}
+		
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors,  "name", "error.name");
+		
+	}
 }
