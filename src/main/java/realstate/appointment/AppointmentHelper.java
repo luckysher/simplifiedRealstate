@@ -8,6 +8,10 @@ import java.net.URLClassLoader;
 import java.net.URL;
 
 public class AppointmentHelper {
+	public AppointmentHelper(){
+		System.out.println("initializing appointment helper");
+	}
+	
 	
 
 }
