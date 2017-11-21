@@ -14,3 +14,18 @@ import javax.annotation.Resource;
 import dao.AppointmentDAOImpl;
 import models.Appointment;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"/applicationContext.xml"})
+public class AppointmentSaveTests{
+		
+	protected final Log logger = LogFactory.getLog(getClass());
+	private AppointmentDAOImpl dao;
+    
+	@Autowired
+    @Resource
+    public void setDao(AppointmentDAOImpl dao) {
+        this.dao = dao ;
+    }
+   
+}
+}
