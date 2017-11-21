@@ -60,7 +60,18 @@ public class AppointmentController{
 		logger.info("Updating apointment status for id : " + id );		
 		}
 		
+	// appontment home page mapping
+	@RequestMapping(value="/", method=RequestMethod.GET)
+	public ModelAndView appointmentList() throws Exception {
+			ModelAndView view = new ModelAndView();
+			view.setViewName("home");			
+			List<Appointment> appointments = appointmentDao.getAppointments();		
+			view.addObject("appointments", appointments);
+			view.addObject("appointment", new Appointment());
+		return view;
+	}
 	
+	@RequestMapping(value="appointment/new", method=RequestMethod.GET)
 	public ModelAndView appointmentForm() throws Exception {
 			ModelAndView view = new ModelAndView();
 			view.setViewName("appointmentview");			
