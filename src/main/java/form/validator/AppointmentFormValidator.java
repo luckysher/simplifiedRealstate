@@ -19,12 +19,12 @@ public class AppointmentFormValidator implements Validator{
 		BasicConfigurator.configure();
 	}
 		
-	@Override
+	//@Override
 	public boolean supports(Class<?> pClass) {
 		return Appointment.class.equals(pClass);
 	}
 
-	@Override
+	//@Override
 	public void validate(Object target, Errors errors) {
 		Appointment appointment = (Appointment) target;
 		String name = appointment.getName();

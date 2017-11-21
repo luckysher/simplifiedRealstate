@@ -1,25 +1,31 @@
 package realstate.appointment;
 
 
+import java.util.List;
+
+import models.Appointment;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+
 import javax.validation.Valid;
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.BasicConfigurator;
+import realstate.appointment.AppointmentHelper;
+import dao.AppointmentDAOImpl;
 import service.AppointmentManager;
 import form.validator.AppointmentFormValidator;
-
 
 
 @Controller
@@ -27,6 +33,8 @@ import form.validator.AppointmentFormValidator;
 public class AppointmentController{
 	protected final Log logger = LogFactory.getLog(getClass());
 	
+	private AppointmentDAOImpl appointmentDao;
+			
 	@Autowired
 	AppointmentManager manager;
 	
@@ -40,27 +48,36 @@ public class AppointmentController{
 	
 	public AppointmentController(){
 		BasicConfigurator.configure();
+		AppointmentHelper helper = new AppointmentHelper();
+		this.appointmentDao = helper.getRealstateDao("d");		
 	}
 	
-	@RequestMapping(value="appointment/new", method=RequestMethod.GET)
+
+	// appointment status done page mapping
+	@RequestMapping(value="/update/status/{id}", method=RequestMethod.POST)
+	public void updateStatus(int id) throws Exception {
+		
+		logger.info("Updating apointment status for id : " + id );		
+		}
+		
+	
 	public ModelAndView appointmentForm() throws Exception {
 			ModelAndView view = new ModelAndView();
-			view.setViewName("appointmentview");
+			view.setViewName("appointmentview");			
+			List<Appointment> appointments = appointmentDao.getAppointments();
 			view.addObject("appointment", new Appointment());
 		return view;
 	}
+		
 	@RequestMapping(value="appointment/save", method=RequestMethod.POST)
 	public ModelAndView appointmentSave(@ModelAttribute("appointment")@Valid Appointment appointment, BindingResult bindingResult, ModelMap model) {
-		
-		
-	validator.validate(appointment, bindingResult);
-	if (bindingResult.hasErrors()) {
-		logger.info("[appointment save] >>>>>>> Returning appSave.jsp page <<<<<<");
-		ModelAndView view = new ModelAndView();
-		view.setViewName("appointmentview");
-		view.addObject("command", appointment);
-		return view;
-	}
+		if (bindingResult.hasErrors()) {
+			logger.info("[appointment save] >>>>>>> Returning appSave.jsp page <<<<<<");
+			ModelAndView view = new ModelAndView();
+			view.setViewName("appointmentview");
+			view.addObject("command", appointment);
+			return view;
+		}	
 			model.addAttribute("name", appointment.getName());
 			model.addAttribute("address", appointment.getAddress());
 			ModelAndView view = new ModelAndView();
