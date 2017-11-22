@@ -86,6 +86,11 @@ nav {
 	text-align:left;
 	background: #dcdcdc8f;
 }
+.form-element{
+	width: min-content;
+	position: relative;
+ 	margin: 0 0 1.5em;
+}
 
 
 .form-label {
