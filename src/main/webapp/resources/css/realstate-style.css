@@ -66,7 +66,7 @@ ul>li>a:hover {
 .error {
 	color: #ff0000;
 	font-weight: bold;
-	margin-left: 312px;
+	margin-left: 2px;
 	font-style: oblique;
 	line-height: 3;
 }
@@ -81,14 +81,17 @@ nav {
 }
 
 .appointment-form {
-	width: 100vw;
+	width: 930px;
+	margin: 0 auto;
+	text-align:left;
+	background: #dcdcdc8f;
 }
 
+
 .form-label {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: cursive;
-	float: right;
-	margin-right: 57px;
+	margin-left: 20px;
 }
 
 td>input {
@@ -118,17 +121,16 @@ table {
 	background: antiquewhite;
 	opacity: 0.9;
 	height: 340px;
-	width: 809px;
+	width: 90%;
 	padding: 29px 2px 7px 4px;
 }
 
 table>td {
 	text-align: center;
+	font-size: 16px;
 }
 
 table>tr {
 	line-height: 5;
 }
-table>tr{
-	    background-color: cornflowerblue;
-}
+
