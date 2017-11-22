@@ -138,4 +138,7 @@ table>td {
 table>tr {
 	line-height: 5;
 }
+tr:nth-child(2n+2){
+	    background-color: #6285c58c;
+}
 
