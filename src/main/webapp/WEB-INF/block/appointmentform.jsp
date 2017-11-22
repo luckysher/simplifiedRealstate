@@ -21,6 +21,38 @@
 					<form:errors path="mobileNum" cssClass="error" />
 				</span>
 			</div>
-			
+			<div class="form-element">
+				<label>
+					<strong class="form-label">Address</strong>
+					<form:input path="address" />
+				</label>
+				<span>
+					<form:errors path="address" cssClass="error" />
+				</span>
+			</div>
+			<div class="form-element">
+				<label>
+					<strong class="form-label">Area</strong>
+				 	<form:input path="area" />
+				</label>
+				<span>
+					<form:errors path="area" cssClass="error" />
+				</span>
+			</div>
+			<div class="form-element">
+				<label>
+					<strong class="form-label">Details</strong>
+					<form:input path="details" />
+				</label>
+				<span>
+					<form:errors path="details" cssClass="error" />
+				</span>
+			</div>
+			<div class="sub-but-container">
+					<center>
+						<input type="submit" value="Book appointment"
+							class="appointment-button" />
+					</center>
+			</div>
 	</form:form>
 	</div>
