@@ -29,7 +29,7 @@ import form.validator.AppointmentFormValidator;
 
 
 @Controller
-//@SessionAttributes("appointment")
+
 public class AppointmentController{
 	protected final Log logger = LogFactory.getLog(getClass());
 	
@@ -55,19 +55,19 @@ public class AppointmentController{
 
 	// appointment status done page mapping
 	@RequestMapping(value="/update/status/{id}", method=RequestMethod.POST)
-	public void updateStatus(int id) throws Exception {
+	public String updateStatus(int id) throws Exception {
 		
-		logger.info("Updating apointment status for id : " + id );		
+		logger.info("Updating apointment status for id : " + id );
+		return "redirect:/";
 		}
 		
-	// appontment home page mapping
+	// appointment home page mapping
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public ModelAndView appointmentList() throws Exception {
 			ModelAndView view = new ModelAndView();
 			view.setViewName("home");			
 			List<Appointment> appointments = appointmentDao.getAppointments();		
 			view.addObject("appointments", appointments);
-			view.addObject("appointment", new Appointment());
 		return view;
 	}
 	
@@ -77,6 +77,7 @@ public class AppointmentController{
 			view.setViewName("appointmentview");			
 			List<Appointment> appointments = appointmentDao.getAppointments();
 			view.addObject("appointment", new Appointment());
+		
 		return view;
 	}
 		
