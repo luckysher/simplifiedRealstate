@@ -141,4 +141,7 @@ table>tr {
 tr:nth-child(2n+2){
 	    background-color: #6285c58c;
 }
+tr:nth-child(2n+1){
+	    background: #b8860b7a;
+}
 
