@@ -23,26 +23,24 @@
 			<h2>Today`s Appointments</h2>
 			<table>		
 					<tr>
-		            	<td align="center"><h3>Id</td>
+		            	<td align="center"><h3>Sr. no</h3></td>
 		            	<td align="center"><h3>Name</h3></td>
 		             	<td align="center"><h3>Address</h3></td>
 		             	<td align="center"><h3>Contact Num</h3></td>
 		             	<td align="center"><h3>Area</h3></td>
-		             	<td align="center" colspan="2"><h3>Details</h3></td>
+		             	<td align="center"><h3>Details</h3></td>
+		             	<td align="center"><h3>Click For Update status</h3></td>
 		          	</tr>	
-				<c:forEach items = "${appointments}" var="appointment">
-		          	<!-->form:form method="post" action="update/status/${appointment.getId()}" -->
-			          	<!--form:input type="hidden" path="id" value="${appointment.getId()}"/ -->
+				<c:forEach items = "${appointments}" var="appointment" varStatus="loop">
 				          	<tr>
-				            	<td align="center">${appointment.getId()}</td>
+				            	<td align="center">${loop.count}</td>
 				            	<td align="center">${appointment.getName()}</td>
 				            	<td align="center">${appointment.getAddress()}</td>
 				            	<td align="center">${appointment.getMobileNum()}</td>
 				            	<td align="center">${appointment.getArea()}</td>
 				            	<td align="center">${appointment.getDetails()}</td>
-				            	<!-- >td align="center"><input type="submit" onclick="alert('submit');" value="Cilck to set done status" /></td-->
+				            	<td align="center"><input type="submit" onclick="alert(${appointment.getId()});" value="Cilck to set done status" /></td>
 				          	</tr>
-			          	<!--  >/form:form -->
 	          	</c:forEach>
           	</table>
           	</center>
