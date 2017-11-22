@@ -144,4 +144,14 @@ tr:nth-child(2n+2){
 tr:nth-child(2n+1){
 	    background: #b8860b7a;
 }
+input[type=text]{
+	height: 39px;
+    font-size: 14px;
+    width: 500px;
+    padding: 19px;    
+    display: inline-block;
+    margin: 0;
+    padding: 0 8px;    
+
+}
 
