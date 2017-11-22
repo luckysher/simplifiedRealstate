@@ -163,3 +163,8 @@ input[type=text]{
     border-radius: 1px;
 }
 
+.apppoint-new-box{
+	margin: 0 auto;
+    width: 501px;
+    padding: 15px;
+}
