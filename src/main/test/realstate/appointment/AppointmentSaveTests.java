@@ -26,6 +26,15 @@ public class AppointmentSaveTests{
     public void setDao(AppointmentDAOImpl dao) {
         this.dao = dao ;
     }
-   
+    @Test
+	public void testFetchSavedAppointments() throws Exception{
+		BasicConfigurator.configure();
+		logger.info("Fetching appointments...");	
+		List<Appointment> appointments = this.dao.getAppointments();
+		logger.info("Fetching all appointment..");
+		for(Appointment a: appointments){
+			logger.info("Appointment booked for Client : " + a.getName());
+	   
+	}
 }
 }
