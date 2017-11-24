@@ -4,28 +4,19 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import java.net.URLClassLoader;
-import java.net.URL;
+import dao.AppointmentDAOImpl;
 
 public class AppointmentHelper {
 	public AppointmentHelper(){
 		System.out.println("initializing appointment helper");
 	}
 	
-	public Object getRealstateDao(String daoBeanName){
-		Object dao = null;
-		 ClassLoader cl = ClassLoader.getSystemClassLoader();
-
-	     URL[] urls = ((URLClassLoader)cl).getURLs();
-
-	     for(URL url: urls){
-	        	System.out.println(url.getFile());
-	        }
-		
+	public AppointmentDAOImpl getRealstateDao(String daoBeanName){
+		AppointmentDAOImpl dao = null;	
 		String contextFilePath = "/applicationContext.xml";		
 		Resource r = new ClassPathResource(contextFilePath);
 		BeanFactory beanfactory = new XmlBeanFactory(r);
-		dao = beanfactory.getBean("d");
+		dao = (AppointmentDAOImpl) beanfactory.getBean("d");
 		return dao;
 	}
 
