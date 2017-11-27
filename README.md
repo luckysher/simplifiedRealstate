@@ -24,7 +24,7 @@ Simplified Realstate :>>
  
  Screen shot of project:
  -----------------------
-		![basic-features](https://github.com/luckysher/simplifiedRealstate/blob/master/mockup.png)
+	![basic-features](https://github.com/luckysher/simplifiedRealstate/blob/master/mockup.png)
  
  
  
