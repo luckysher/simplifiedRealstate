@@ -21,10 +21,9 @@ Simplified Realstate :>>
                     This have been developed using Java, maven, spring 3.0.5, hibernate 3.0, csc, bootstrap and javascript.
  
  
- 
- Screen shot of project:
- -----------------------
-	![basic-features](https://github.com/luckysher/simplifiedRealstate/blob/master/mockup.png)
+
+
+	![basic-features](https://github.com/luckysher/simplifiedRealstate/blob/master/sRealstate.png)
  
  
  
