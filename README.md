@@ -8,23 +8,20 @@
 
 Simplified Realstate :>>      
 =====================   
-   					As the name suggest this project is main focus on simplifying the property dealer`s life.
-   	 This project basically a web project that make a property dealer`s easy by reducing the a lot of burden of remember things like
-   	 To which client I have to meet today. What are the latest properties for selling I have. and which of the properties have been sold etc.
-   	 This project not only simplify the dealer life but property seeker`s as well.
-   	                                                                  For more details you must download the project and setup it.
+   					As the name suggest this project is main focus on simplifying the property
+	 dealer`s life.This project basically a web project that make a property dealer`s easy by reducing the a lot 
+        of burden of remember things like To which client I have to meet today. What are the latest properties for 
+        selling I have. and which of the properties have been sold etc. This project not only simplify the dealer 
+        life but property seeker`s as well. For more details you must download the project and setup it.
  
- 
+ 	![basic-features](https://github.com/luckysher/simplifiedRealstate/blob/master/sRealstate.png)	
  
  Technologies Used: 
  ------------------
-                    This have been developed using Java, maven, spring 3.0.5, hibernate 3.0, csc, bootstrap and javascript.
+                    This have been developed using Java, maven, spring 3.0.5, 
+		    hibernate 3.0, csc, bootstrap and javascript.
  
- 
-
-
-	![basic-features](https://github.com/luckysher/simplifiedRealstate/blob/master/sRealstate.png)
- 
+  
  
  
  Project setup instructions:
@@ -35,3 +32,4 @@ Simplified Realstate :>>
  
  Test cases:
  ----------
+             Testcase for testing various simplified realstate condidtions.
